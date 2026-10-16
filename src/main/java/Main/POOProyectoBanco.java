@@ -1,4 +1,8 @@
-package com.mycompany.poo.proyectobanco;
+package Main;
+
+import com.mycompany.poo.proyectobanco.CuentaAhorro;
+import com.mycompany.poo.proyectobanco.CuentaBancaria;
+import com.mycompany.poo.proyectobanco.CuentaCorriente;
 
 public class POOProyectoBanco {
 
@@ -9,7 +13,6 @@ public class POOProyectoBanco {
         CuentaBancaria miCuenta = new CuentaBancaria("ACC-001", "Ana Perez", 5000.0);
 
         // 1. Prueba de Encapsulamiento:
-        // (Si quitas las barras "//" de abajo, NetBeans marcará error porque 'saldo' es private)
         // miCuenta.saldo = 50000; 
 
         // 2. Acceso Directo a Atributos Públicos:
@@ -17,7 +20,7 @@ public class POOProyectoBanco {
         System.out.println("Titular (directo): " + miCuenta.titular);
         System.out.println("Numero de Cuenta (directo): " + miCuenta.numeroCuenta);
 
-        // 3. Prueba de CuentaAhorro (4 retiros consecutivos para evidenciar comisión):
+        // 3. Prueba de CuentaAhorro (4 retiros consecutivos para evidenciar ls comisión):
         System.out.println("\n--- Prueba Cuenta Ahorro (4 Retiros) ---");
         CuentaAhorro cuentaAhorro = new CuentaAhorro("AH-999", "Carlos Ruiz", 3000.0, 5.0);
         cuentaAhorro.retirarConComision(100.0); // Retiro 1
